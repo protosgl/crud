@@ -22,7 +22,6 @@ Route::get("/userController",[UserController::class,'allUser']);
 
 Route::get("/userModel",'FormController@show');
 
-//Route::post("/postUser", [UserController::class,'postUser']);
 
 Route::post("/postUser", function() {
     dd(Request::all());
