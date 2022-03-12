@@ -15,16 +15,6 @@ use App\Http\Controllers\UserController;
 use App\User;
 use Illuminate\Support\Facades\Request;
 
-Route::get('/', 'UserController@show');
-
-
-Route::get("/userController",[UserController::class,'allUser']);
-
-Route::get("/userModel",'FormController@show');
-
-
-Route::post("/postUser", function() {
-    dd(Request::all());
-})->name('postUser');
+Route::get('/', 'UserController@index');
 
 
